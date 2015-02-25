@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf14248337529120" configfile="/ASCHospital/WebContent/WEB-INF/faces-config.xml">
+  <nodes xsi:type="pageflow:PFPage" name="login.xhtml" x="192" y="132" id="pf14248342527711" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf14248342527722" path="/login.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="welcome.xhtml" x="497" y="120" id="pf14248342527724" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf14248342527722" path="/welcome.xhtml"/>
+  <links id="pf14248342527722" target="pf14248342527724" source="pf14248342527711" outcome="success"/>
+</pageflow:Pageflow>

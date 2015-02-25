@@ -1,0 +1,79 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+    "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd"
+    >
+
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:f="http://java.sun.com/jsf/core"
+	xmlns:p="http://primefaces.org/ui">
+<ui:composition template="MasterPage.xhtml">
+	<ui:define name="title">ASC DB Stony Brook Heart Center</ui:define>
+	<ui:define name="content">
+		<h:form id="loginForm" style="align:center">
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<center>
+				<p:outputLabel style="font-size: 250%;font-weight: bold;">Aortic Surgery Center (ASC) Quality Database Application</p:outputLabel>
+			</center>
+			<br />
+			<table width="100%" align="center" border="0">
+				<tr align="center">
+					<td width="20%"></td>
+					<td width="25%" style="text-align: right; font-size: 130%;"><p:outputLabel
+							value="UserName:"></p:outputLabel></td>
+					<td width="25%" style="text-align: left; font-size: 130%;"><p:inputText
+							id="txtLogin" value="#{loginBean.userName}" required="true"
+							requiredMessage="Enter a valid UserName." style="width:60%"></p:inputText></td>
+					<td width="30%"></td>
+				</tr>
+				<tr align="center">
+					<td width="20%"></td>
+					<td width="25%" style="text-align: right; font-size: 130%;"><p:outputLabel
+							value="Password: "></p:outputLabel></td>
+					<td width="25%" style="text-align: left; font-size: 130%;"><p:password
+							id="txtPassword" value="#{loginBean.password}" required="true"
+							requiredMessage="Enter a valid password." style="width:60%"></p:password></td>
+					<td width="30%"></td>
+				</tr>
+				<tr align="center">
+					<td width="20%"></td>
+					<td width="25%" style="text-align: right; font-size: 130%;"><p:outputLabel></p:outputLabel></td>
+					<td width="25%" style="text-align: left; font-size: 130%;"><p:commandButton
+							type="submit" value="Login" action="#{loginBean.validate}"
+							ajax="false" style="width:63%"></p:commandButton></td>
+					<td width="30%"></td>
+				</tr>
+			</table>
+
+			<table width="100%" align="center">
+				<tr>
+					<td width="45%"></td>
+					<td style="text-align: left;"><span style="color: red;"><h:messages
+								id="message" /></span></td>
+				</tr>
+			</table>
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />
+			<br />For problems, please email: <a
+				href="mailto:Shang.Loh@stonybrookmedicine.edu?Subject=ASC%20Issue%20Report"
+				target="_top">Shang.Loh@stonybrookmedicine.edu</a> and 
+			<a
+				href="mailto:Paul.Fodor@stonybrook.edu?Subject=ASC%20Issue%20Report"
+				target="_top">Paul.Fodor@stonybrook.edu</a>
+			<br />
+
+		</h:form>
+	</ui:define>
+</ui:composition>
+</html>

@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+          "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+	xmlns:h="http://java.sun.com/jsf/html"
+	xmlns:ui="http://java.sun.com/jsf/facelets"
+	xmlns:p="http://primefaces.org/ui">
+<h:head>
+	<title><ui:insert name="title"></ui:insert></title>
+	<link
+		href="${facesContext.externalContext.requestContextPath}/resources/css/MasterPage.css"
+		rel="stylesheet" type="text/css" />
+</h:head>
+<h:body>
+	<ui:insert name="header">
+		<table width="100%" border="0">
+			<tr align="center">
+				<td width="10%" class="hdrCell" />
+				<td class="hdrCell"><a href="http://www.stonybrook.edu"><h:graphicImage
+							url="/resources/imgs/quickNavStonyBrookUniversity.png"
+							longdesc="http://www.stonybrook.edu" /></a></td>
+				<td class="hdrCell"><a href="http://www.stonybrookmedicine.edu"><h:graphicImage
+							url="/resources/imgs/quickNavStonyBrookMedicine.png"
+							longdesc="http://http://www.stonybrookmedicine.edu" /></a></td>
+				<td class="hdrCell"><a
+					href="http://www.stonybrookchildrens.org"><h:graphicImage
+							url="/resources/imgs/quickNavStonyBrookChildrens.png"
+							longdesc="http://http://www.stonybrookchildrens.org" /></a></td>
+				<td class="hdrCell"><a
+					href="http://www.stonybrookphysicians.com"><h:graphicImage
+							url="/resources/imgs/quickNavUniversityPhysicians.png"
+							longdesc="http://http://www.stonybrookphysicians.com" /></a></td>
+				<td class="hdrCell"><a
+					href="http://stonybrookmedicine.edu/newsroom" target="_blank">Newsroom</a></td>
+				<td class="hdrCell"><a
+					href="http://alumniandfriends.stonybrook.edu/page.aspx?pid=587"
+					target="_blank">Giving</a></td>
+				<td class="hdrCell"><a
+					href="http://stonybrookmedicine.edu/volunteer" target="_blank">Volunteer</a></td>
+				<td class="hdrCell"><a
+					href="http://stonybrookmedicine.edu/education" target="_blank">Students</a></td>
+				<td class="hdrCell"><a
+					href="http://stonybrookmedicine.edu/medical-professionals"
+					target="_blank">Faculty</a></td>
+				<td class="hdrCell"><a
+					href="http://stonybrookmedicine.edu/healthsciences" target="_blank">Health&nbsp;Sciences</a></td>
+				<td width="10%" class="hdrCell" />
+			</tr>
+			<tr>
+				<td colspan="13"><br /></td>
+			</tr>
+			<tr>
+				<td width="10%" />
+				<td colspan="10	"><h:graphicImage ismap="true"
+						url="/resources/imgs/header_log.png" width="511" height="57"
+						usemap="true"
+						longdesc="http://http://medicine.stonybrookmedicine.edu"
+						border="0" /> <!-- <h:graphicImage></h:graphicImage> --></td>
+				<td width="10%" />
+			</tr>
+			<tr>
+				<td colspan="13"><br /></td>
+			</tr>
+
+		</table>
+
+		<table width="100%" border="0" style="border-collapse: collapse;">
+			<tr>
+				<td colspan="13" bgcolor="#800000"><br /></td>
+			</tr>
+			<tr>
+				<td width="10%" bgcolor="#800000"></td>
+				<td width="80%">
+					<div id="content">
+						<ui:insert name="content">
+						</ui:insert>
+					</div>
+				</td>
+				<td width="10%" bgcolor="#800000"></td>
+			</tr>
+			<tr>
+				<td colspan="13" bgcolor="#800000"><br /></td>
+			</tr>
+		</table>
+
+	</ui:insert>
+	<ui:insert name="footer">
+		<div id="disclaimer" align="center">
+			<table width="80%" border="0">
+				<tr>
+					<td><br /> <br /></td>
+				</tr>
+				<tr>
+					<td class="hdrCell"><a
+						href="http://stonybrookmedicine.edu/disclaimer" target="_blank">Legal/Disclaimer</a></td>
+					<td class="hdrCell"><a
+						href="http://stonybrookmedicine.edu/contact-us" target="_blank">Contact
+							Us</a></td>
+					<td class="hdrCell"><a
+						href="http://sbmedx.uhmc.sunysb.edu/PhysicianPortal2"
+						target="_blank">Physician Portal</a></td>
+					<td class="hdrCell"><a
+						href="http://sbmedx.uhmc.sunysb.edu/employee/" target="_blank">Employee
+							Portal</a></td>
+					<td class="hdrCell"><a
+						href="http://www.stonybrook.edu/sb/jobs.shtml" target="_blank">Careers</a></td>
+					<td class="hdrCell"><a
+						href="http://stonybrookmedicine.edu/directory" target="_blank">Directory</a></td>
+					<td class="hdrCell"><a
+						href="http://www.listateveteranshome.org/" target="_blank">Long
+							Island State Veterans Home</a></td>
+				</tr>
+				<tr>
+					<td><br /> <br /></td>
+				</tr>
+			</table>
+			<table width="80%">
+				<tr align="center">
+					<td class="ftrBanner" align="center"><a
+						href="http://www.stonybrook.edu"><h:graphicImage
+								url="/resources/imgs/footer_logo.png"
+								longdesc="http://www.stonybrook.edu" /></a></td>
+				</tr>
+				<tr>
+					<td><br /> <br /></td>
+				</tr>
+			</table>
+		</div>
+		<div id="footer" class="footer" align="center">
+			<table width="80%" border="0" class="ftrCell">
+				<tr>
+					<td width="25%" valign="top">Stony Brook University Hospital<br />101
+						Nicolls Road Stony Brook, NY 11794<br />(631) 444-4000
+					</td>
+					<td width="25%" valign="top"><a
+						href="http://www.stonybrookmedicine.edu/" target="_blank">Stony
+							Brook Medicine Home</a><br /> <a href="http://www.stonybrook.edu/"
+						target="_blank">Stony Brook University</a><br /> <a
+						href="http://www.stonybrookchildrens.org/" target="_blank">Stony
+							Brook Children's Hospital</a><br /> <a
+						href="http://www.stonybrookphysicians.com/" target="_blank">University
+							Physicians</a></td>
+					<td width="25%" valign="top"><a
+						href="http://stonybrookmedicine.edu/newsroom" target="_blank">Newsroom</a><br />
+						<a href="http://alumniandfriends.stonybrook.edu/page.aspx?pid=587"
+						target="_blank">Giving</a><br /> <a
+						href="http://stonybrookmedicine.edu/volunteer" target="_blank">Volunteer</a><br />
+						<a href="http://stonybrookmedicine.edu/education" target="_blank">Students</a><br />
+						<a href="http://stonybrookmedicine.edu/medical-professionals"
+						target="_blank">Faculty</a><br /> <a
+						href="http://stonybrookmedicine.edu/healthsciences"
+						target="_blank">Health Sciences</a><br /></td>
+					<td width="25%" valign="top"><a
+						href="http://stonybrookmedicine.edu/newsroom" target="_blank">School
+							of Dental Medicine</a><br /> <a
+						href="http://stonybrookmedicine.edu/newsroom" target="_blank">School
+							of Health Technology &amp; Management</a><br /> <a
+						href="http://stonybrookmedicine.edu/newsroom" target="_blank">School
+							of Medicine</a><br /> <a
+						href="http://stonybrookmedicine.edu/newsroom" target="_blank">School
+							of Nursing</a><br /> <a
+						href="http://stonybrookmedicine.edu/newsroom" target="_blank">School
+							of Social Welfare</a></td>
+				</tr>
+			</table>
+			<br />
+			<p align="center">Copyright ©2014 Stony Brook University and
+				Stony Brook Medicine. All rights reserved.</p>
+			<br />
+		</div>
+	</ui:insert>
+	<map name="Map" id="Map">
+		<area shape="rect" coords="1,1,246,58"
+			href="http://medicine.stonybrookmedicine.edu" target="_self" />
+		<area shape="rect" coords="246,1,510,56"
+			href="http://cancer.stonybrookmedicine.edu" />
+	</map>
+</h:body>
+</html>
